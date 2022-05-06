@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+p {
+  font-family: Anton, sans-serif;
+}
+
+.cell {
+  width: 30px;
+  height: 30px;
+  background-color: lightgray;
+  padding: 10px;
+  margin: 10px 10px 10px 10px;
+  border: 2px grey;
+}
+
+.opened {
+  box-shadow: 0px 0px 3px 5px darkslategray;
+}
+
+.fired {
+  background-image: url("./fired.svg") ;
+  background-repeat: no-repeat;
+  background-size: 50px 50px;
+}
+
+.flagged {
+  background-image: url("./target.svg") ;
+  background-repeat: no-repeat;
+  background-size: 50px 50px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.field {
+  width: 50%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 30px auto;
+  background-color: aquamarine;
+}
+
+.controls {
+  display: flex;
+  flex-direction: row;
+}
+
+.control-header {
+  display: flex;
+  flex-direction: row;
+}
+
+.control-header-element {
+  margin: 5px 10px;
+}
+
+.logo {
+  width: 30px;
+  height: 30px;
+  pointer-events: none;
+}
+
+.control {
+  padding: 10px;
+  margin: 20px;
+}
+
+.control-panel {
+  width: 50%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+  background-color: aqua;
+}
+
